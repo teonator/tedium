@@ -1,0 +1,370 @@
+html, body {
+	min-height: 100%;
+	height: 100%;
+
+	color: #3a3a3a;
+}
+
+body {
+
+	background-image: url("../img/cover.jpg");
+	background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;	
+
+
+    @media (max-width: 990px) {
+
+    	background-position: center top;
+    	background-size: 960px 600px;
+
+    }    
+
+}
+
+footer {
+
+	position: absolute;
+	bottom: 0;
+
+	padding-bottom: 30px;
+
+	color: #b5b6b5;
+	font-size: 12px;
+
+}
+
+p {
+
+	margin-bottom: 20px;
+
+}
+
+a, a:hover {
+
+	color: #87cefa;
+
+}
+
+pre {
+
+	margin: 0 -20px 20px;
+	padding: 10px 20px;
+
+    white-space: pre-wrap;
+    word-wrap: break-word;	
+
+    border: 1px solid #d2d2d2;
+    border-width: 1px 0;
+    border-radius: 0;
+}
+
+article {
+
+	padding-bottom: 60px;
+
+}
+
+h1, h2 {
+
+	margin: 20px 0;
+
+	font-size: 30px;
+	line-height: 32px;
+
+	a {
+
+		color: #3a3a3a;
+
+	}
+
+}
+
+.page, .row  {
+
+	height: 100%;
+
+}
+
+.page-cover {
+
+	@media (max-width: 990px) {
+
+		padding-left: 0;
+		padding-right: 0;
+
+	}
+
+	.cover-img {
+
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		width: 34%;
+
+		// background-position: center;
+		// background-position: left top;
+		// background-size: cover;
+
+		@media (max-width: 990px) {
+
+			position: relative !important;
+
+			width: 100%;
+			max-width: 100%;
+			min-height: 500px;
+
+		}
+
+		.cover-content {
+
+			position: absolute;
+			bottom: 0;
+			padding: 30px;
+
+			width: 100%;
+
+			box-sizing: border-box;
+
+			&:before {
+
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+
+				content: '';
+
+				background-repeat: repeat-x;
+				background-image: linear-gradient(to top, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%);
+
+			}
+
+			.cover-content-wrapper {
+
+  				position: relative;
+  				z-index: 100;				
+
+			}
+
+			.cover-title {
+
+				margin-bottom: 12px;
+
+				font-size: 32px;
+
+				a {
+
+					color: #fff;
+					text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+				}
+
+			}
+
+			.cover-desc {
+
+				margin-bottom: 14px;
+
+				color: #fff;
+				font-size: 16px;
+				text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+			}
+
+			.cover-social {
+
+				margin: 0;
+				padding: 0;
+
+    			list-style: none;
+
+				li {
+
+					display: inline-block;
+
+					margin-right: 8px; 
+
+					.fa {
+
+						color: #fff;
+
+					}					
+
+				}			
+			}
+
+			.cover-collection {
+
+				margin-top: 20px;
+				margin-bottom: 0;
+    			padding-top: 20px;
+    			padding-left: 0;
+
+    			list-style: none;
+
+				border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+				li {
+
+					display: inline-block;
+
+					&:after {
+
+						content: ",";
+
+					}
+
+					&:last-child:after {
+
+						content: "";
+
+					}
+
+					a {
+
+						color: #87cefa;
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.page-content {
+
+	min-height: 100%;
+
+	padding-top: 70px;  
+	padding-bottom: 20px;  
+	padding-left: 8%;
+	padding-right: 8%;
+
+	background-color: #fff;
+
+	@media (max-width: 990px) {
+		padding-left: 8%;
+	}
+
+	time {
+
+		display: block;
+		padding-bottom: 10px;
+
+		color: #b5b6b5;
+		font-weight: 500;
+		text-transform: uppercase;
+		line-height: 25px;
+		letter-spacing: 1px;
+
+		border-bottom: 1px solid #e2e2e2;
+
+	}
+
+	.the-category {
+
+		margin-top: 0;
+		margin-bottom: 60px;
+
+	}
+
+	.the-categories {
+
+
+	}
+
+	.the-author {
+
+		position: relative;
+
+		margin: 30px 0 0 0;
+
+		min-height: 150px;
+
+		border-top: 1px solid #e2e2e2;
+
+		&:before {
+
+			display: inline-block;
+
+			position: absolute;
+    		top: -11px;
+    		left: 0;
+
+    		padding-right: 1em;
+
+			content: "Author";
+
+			background-color: #fff;
+
+			color: #b5b6b5;
+			text-transform: uppercase;
+
+		}
+
+		h3 {
+
+			margin: 0 0 5px 0;
+
+			color: #b5b6b5;
+			font-size: 18px;
+			font-weight: 500;
+
+		}
+
+		img {
+
+			position: absolute;
+			top: 30px;
+			left: 0;
+
+			width: 80px;
+			height: 80px;
+
+			border-radius: 80px;
+
+		}
+
+		p {
+
+			color: #b5b6b5;
+			margin: 0;
+
+		}
+
+		.the-author-info {
+
+			padding: 38px 0 0 100px;
+
+		}
+
+	}
+
+	.the-back {
+
+		margin-top: 50px;
+		padding-top: 10px;
+
+		line-height: 25px;
+
+		border-top: 1px solid #e2e2e2;
+
+		a {
+
+			text-transform: uppercase;
+
+		}
+
+	}
+
+}
